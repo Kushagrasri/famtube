@@ -42,6 +42,6 @@ Host/Port - 127.0.0.1:3000
     request body - 
     {
         "title": "String",
-        "description": "String
+        "description": "String"
     }
     returns a video searched on the basis of title and/or description
