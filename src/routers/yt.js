@@ -85,14 +85,4 @@ router.post('/', async (req, res) => {
     }
 })
 
-router.post('/create', async (req, res) => {
-    const video = new Video(req.body)
-    try {
-        await video.save()
-        return res.status(201).send({video})
-    } catch (e) {
-        return res.status(400).send(e)
-    }
-})
-
 module.exports = router
