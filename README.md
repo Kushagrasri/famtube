@@ -1,6 +1,6 @@
 # Famtube
 
-Famtube is an application to fetch youtube videos asynchronously and respond to endpoints which return the video data stored
+Famtube is an application to fetch youtube videos asynchronously and respond to endpoints which return the video data stored.
 
 ## Installation
 
@@ -33,15 +33,26 @@ To launch the server run the following command
 npm run dev
 ```
 
+## Additional details -
+
+- The project supports multiple API keys for if one is exhausted, the other can be used.
+- The project isn't dockerized because I have never worked on docker and the time constraint for submission wasn't enough for me to learn and implement it.
+
 ## Endpoints
 
 Host/Port - 127.0.0.1:3000
+
+
 1. GET /video/:limit?
+
     returns a list of videos sorted in descending order of their publisted date with an optional parameter of limit which specifies the number of videos returned which is default to 3
+
 2. POST /video
+
     request body - 
     {
         "title": "String",
-        "description": "String"
+        "description": "String
     }
+
     returns a video searched on the basis of title and/or description
